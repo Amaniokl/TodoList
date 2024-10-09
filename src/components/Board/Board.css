@@ -1,0 +1,53 @@
+.board {
+  min-width: 390px;
+  padding: 5px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.board_top {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  width: 100%;
+  text-transform: capitalize;
+}
+.board_top_name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.board_top_name p {
+  font-weight: 500;
+}
+.board_top_name span {
+  color: gray;
+}
+.board_top_name svg {
+  height: 15px;
+  width: 15px;
+}
+.board_top_options {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  opacity: 0.5;
+  transition: 200ms;
+}
+.board_top:hover .board_top_options {
+  opacity: 1;
+}
+.board_top_options svg {
+  height: 20px;
+  width: 20px;
+  color: grey;
+  transition: 200ms;
+}
+.board_top_options svg:hover {
+  color: black;
+}
+.board_container {
+  overflow-y: auto;
+  height: 75vh;
+}
